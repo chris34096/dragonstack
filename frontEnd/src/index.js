@@ -1,4 +1,13 @@
-import react from "react";
+import React from "react";
 import { render } from "react-dom";
+import Generation from "./components/Generation";
+import Dragon from "./components/Dragon";
 
-render(<div> Dragon Stack from React</div>, document.getElementById("root"));
+render(
+  <div>
+    <h2>Dragon Stack From React</h2>
+    <Generation />
+    <Dragon />
+  </div>,
+  document.getElementById("root")
+);
