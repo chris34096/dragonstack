@@ -1,4 +1,4 @@
-const pool = require('../../databasePool');
+const pool = require("../../databasePool");
 
 class TraitTable {
   static getTraitId({ traitType, traitValue }) {
@@ -11,10 +11,9 @@ class TraitTable {
 
           resolve({ traitId: response.rows[0].id });
         }
-      )
+      );
     });
   }
 }
-
 
 module.exports = TraitTable;

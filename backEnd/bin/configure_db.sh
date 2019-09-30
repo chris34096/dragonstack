@@ -17,3 +17,4 @@ psql -U node_user dragonstackdb < ./bin/sql/accountDragon.sql
 node ./bin/insertTraits.js
 
 echo "dragonstackdb configured"
+© 2019 GitHub, Inc.

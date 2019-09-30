@@ -1,14 +1,14 @@
-const TRAITS = require('../../data/traits');
+const TRAITS = require("../../data/traits");
 
 const DEFAULT_PROPERTIES = {
   dragonId: undefined,
-  nickname: 'unnamed',
+  nickname: "unnamed",
   generationId: undefined,
   isPublic: false,
   saleValue: 0,
   sireValue: 0,
   get birthdate() {
-    return new Date()
+    return new Date();
   },
   get randomTraits() {
     const traits = [];
@@ -17,16 +17,15 @@ const DEFAULT_PROPERTIES = {
       const traitType = TRAIT.type;
       const traitValues = TRAIT.values;
 
-      const traitValue = traitValues[
-        Math.floor(Math.random() * traitValues.length)
-      ];
+      const traitValue =
+        traitValues[Math.floor(Math.random() * traitValues.length)];
 
       traits.push({ traitType, traitValue });
     });
 
     return traits;
   }
-}
+};
 
 class Dragon {
   constructor({

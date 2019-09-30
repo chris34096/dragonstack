@@ -1,6 +1,5 @@
-    
-const pool = require('../databasePool');
-const TRAITS = require('../data/traits');
+const pool = require("../databasePool");
+const TRAITS = require("../data/traits");
 
 TRAITS.forEach(TRAIT => {
   const traitType = TRAIT.type;
